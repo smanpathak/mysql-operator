@@ -369,7 +369,7 @@ func schema_pkg_apis_mysql_v1alpha1_ClusterStatus(ref common.ReferenceCallback) 
 		Schema: spec.Schema{
 			SchemaProps: spec.SchemaProps{
 				Properties: map[string]spec.Schema{
-					"ReadyNodes": {
+					"readyNodes": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ReadyNodes represents number of the nodes that are in ready state",
 							Type:        []string{"integer"},
@@ -403,7 +403,6 @@ func schema_pkg_apis_mysql_v1alpha1_ClusterStatus(ref common.ReferenceCallback) 
 						},
 					},
 				},
-				Required: []string{"ReadyNodes"},
 			},
 		},
 		Dependencies: []string{
@@ -886,7 +885,7 @@ func schema_pkg_apis_meta_v1_APIGroup(ref common.ReferenceCallback) common.OpenA
 						},
 					},
 				},
-				Required: []string{"name", "versions", "serverAddressByClientCIDRs"},
+				Required: []string{"name", "versions"},
 			},
 		},
 		Dependencies: []string{
